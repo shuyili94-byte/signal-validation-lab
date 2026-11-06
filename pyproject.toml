@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signal-validation-lab"
+version = "0.1.0"
+description = "Validate arbitrary external strategy signals with fixed three-session labels and walk-forward research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "shuyili94-byte"}]
+dependencies = ["numpy>=1.24,<3"]
+keywords = ["signal-validation", "walk-forward", "research", "pbo"]
+
+[project.urls]
+Repository = "https://github.com/shuyili94-byte/signal-validation-lab"
+
+[project.scripts]
+signal-validate = "signal_validation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["signal_validation*"]

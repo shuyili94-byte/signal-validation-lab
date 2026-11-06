@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+*.key
+*.pem
+data/
+outputs/
+.test-work/
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
